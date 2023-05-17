@@ -175,7 +175,7 @@ void insert_favorite_contact(map<string, contact> *map1, string name, contact pe
     else
         cout << name << " is not favorite so you cant insert him/her to a favorite list" << endl;
 }
-void show_the_favorites_contact(map<string, contact> *map1)
+void show_the_favorites_contacts(map<string, contact> *map1)
 {
     for (auto it = (*map1).begin(); it != (*map1).end(); it++)
     {
@@ -289,6 +289,10 @@ int choose,id;
         cout << "name : ";
         cin >> name;
         show_the_all_number_of_one_contact(&my_map, name);
+    }
+    else if (choose == 7)
+    { 
+        show_the_favorites_contacts(&my_map);
     }
 
     return 0;
