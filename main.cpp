@@ -278,6 +278,16 @@ int choose,id;
 
         insert_favorite_contact(&my_map, name, contact(main_num, home_num, work_num, 1, id));
     }
+    else if(choose == 5)
+    {
+        cout << "name : ";
+        cin >> name;
+        delete_favorite_contact(&my_map, name);
+    }
+    // else if(choose == 6)
+    // {
+
+    // }
 
     return 0;
 }
