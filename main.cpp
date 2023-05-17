@@ -284,10 +284,12 @@ int choose,id;
         cin >> name;
         delete_favorite_contact(&my_map, name);
     }
-    // else if(choose == 6)
-    // {
-
-    // }
+    else if (choose == 6)
+    {
+        cout << "name : ";
+        cin >> name;
+        show_the_all_number_of_one_contact(&my_map, name);
+    }
 
     return 0;
 }
