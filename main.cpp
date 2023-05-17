@@ -294,6 +294,10 @@ int choose,id;
     { 
         show_the_favorites_contacts(&my_map);
     }
+    else if (choose == 8)
+    {
+        show_the_contacts(&my_map);
+    }
 
     return 0;
 }
