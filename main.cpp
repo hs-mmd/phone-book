@@ -263,6 +263,21 @@ int choose,id;
         cin >> name;
         edite_contact(&my_map, name);
     }
+    else if (choose == 4)
+    {
+        cout << "name : ";
+        cin >> name;
+        cout << "main_num : ";
+        cin >> main_num;
+        cout << "home_num : ";
+        cin >> home_num;
+        cout << "work_num : ";
+        cin >> work_num;
+        cout << "id : ";
+        cin >> id;
+
+        insert_favorite_contact(&my_map, name, contact(main_num, home_num, work_num, 1, id));
+    }
 
     return 0;
 }
