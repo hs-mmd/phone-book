@@ -298,6 +298,12 @@ int choose,id;
     {
         show_the_contacts(&my_map);
     }
+    else if (choose == 9)
+    {
+        cout << "search : ";
+        cin >> name;
+        search_for_special_contact(&my_map,name);
+    }
 
     return 0;
 }
