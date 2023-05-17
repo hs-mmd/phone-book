@@ -233,7 +233,30 @@ int choose,id;
         <<"4.insert favorite contact"<<"\n"<<"5.delete favorite contact"<<"6.show the all number of one contact"
         <<"\n"<<"7.show the favorite contacts"<<"\n"<<"8.show the all contacts"<<"\n"
         <<"9.search for a specefic contact"<<endl;
-    cin>>choose; 
-    
+    cin>>choose;
+    if (choose == 1)
+    {
+        cout << "name : ";
+        cin >> name;
+        cout << "main_num : ";
+        cin >> main_num;
+        cout << "home_num : ";
+        cin >> home_num;
+        cout << "work_num : ";
+        cin >> work_num;
+        cout << "id : ";
+        cin >> id;
+        cout << "is favorite?(false or true) : ";
+        cin >> TF;
+
+        insert_contact(&my_map, name, contact(main_num, home_num, work_num, TF, id));
+    }
+    else if (choose == 2)
+    {
+        cout << "name : ";
+        cin >> name;
+        delete_contact(&my_map, name);
+    }
+
     return 0;
 }
