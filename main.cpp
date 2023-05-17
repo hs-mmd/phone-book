@@ -226,6 +226,14 @@ int main()
 {
     map<string, contact> my_map;
 
+int choose,id;
+    string name,main_num,home_num,work_num;
+    bool TF;
+    cout<<"choose :"<<"\n"<<"1.insert contact"<<"\n"<<"2.delete contact"<<"\n"<<"3.edite contact"<<"\n"
+        <<"4.insert favorite contact"<<"\n"<<"5.delete favorite contact"<<"6.show the all number of one contact"
+        <<"\n"<<"7.show the favorite contacts"<<"\n"<<"8.show the all contacts"<<"\n"
+        <<"9.search for a specefic contact"<<endl;
+    cin>>choose; 
     
     return 0;
 }
