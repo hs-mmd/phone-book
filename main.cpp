@@ -257,6 +257,12 @@ int choose,id;
         cin >> name;
         delete_contact(&my_map, name);
     }
+    else if (choose == 3)
+    {
+        cout << "name : ";
+        cin >> name;
+        edite_contact(&my_map, name);
+    }
 
     return 0;
 }
